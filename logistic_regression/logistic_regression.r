@@ -2,7 +2,7 @@
 # Solution to Kaggle Titanic problem, with result 0.74641
 # Using the materials of course: MITx: 15.071x The Analytics Edge
 
-setwd("F:/Dev/data_science")
+setwd("Path/To/Data")
 data = read.csv("train.csv")
 test = read.csv("test.csv")
 str(data)
