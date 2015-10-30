@@ -21,9 +21,11 @@ summary(predictTrain)
 test$Survived[predictTrain >= 0.5] = 1
 test$Survived[predictTrain < 0.5] = 0
 
+# Write result to file
 submit <- data.frame(PassengerId = test$PassengerId, Survived = test$Survived)
 write.csv(submit, file = "result.csv", row.names = FALSE)
 
+# Model tests
 predictTrain = predict(model, type="response")
 tapply(predictTrain, data$Survived, mean)
 
