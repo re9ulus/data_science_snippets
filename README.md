@@ -1,2 +1,2 @@
-# r-snippets
-The snippets in R programming language for common tasks.
+# Data science snippets
+The snippets for data science problems.
